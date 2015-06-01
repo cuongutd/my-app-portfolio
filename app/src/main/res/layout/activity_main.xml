@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="My NanoDegree Apps"
+        android:id="@+id/txt_appTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_txt_spotify"
+        android:id="@+id/b_spotify"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/txt_appTitle"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.Animation.AppCompat.Dialog"
+        android:background="#ff5181ff"
+        android:onClick="buttonSpotifyClick"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_txt_football"
+        android:id="@+id/b_football"
+        android:layout_below="@+id/b_spotify"
+        android:layout_centerHorizontal="true"
+        android:background="#fffdff8b"
+        android:onClick="buttonFootballClick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_txt_library"
+        android:id="@+id/b_library"
+        android:layout_below="@+id/b_football"
+        android:layout_centerHorizontal="true"
+        android:background="#ff6accff"
+        android:onClick="buttonLibraryClick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_txt_build"
+        android:id="@+id/b_build"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/b_library"
+        android:background="#ffffc088"
+        android:onClick="buttonBuildClick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_txt_xyz"
+        android:id="@+id/b_xyz"
+        android:layout_below="@+id/b_build"
+        android:layout_centerHorizontal="true"
+        android:background="#ffb7ff5a"
+        android:onClick="buttonXYZClick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_txt_capstone"
+        android:id="@+id/b_capstone"
+        android:layout_below="@+id/b_xyz"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff1b4c"
+        android:onClick="buttonCapstoneClick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
